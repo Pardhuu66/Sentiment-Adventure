@@ -1,0 +1,115 @@
+/* styles.css (Updated with more animations, SVG styles) */
+body {
+    background-color: #f0f8ff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #333;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.nav-link {
+    color: #007bff !important;
+}
+
+.nav-link:hover {
+    color: #0056b3 !important;
+}
+
+.container {
+    max-width: 800px;
+}
+
+h1, h2 {
+    color: #007bff;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.positive { color: green; font-weight: bold; }
+.negative { color: red; font-weight: bold; }
+.neutral { color: orange; font-weight: bold; }
+
+.exercise button {
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.exercise button:hover {
+    transform: scale(1.05);
+}
+
+.feedback {
+    font-weight: bold;
+    animation: fadeIn 0.5s;
+}
+
+.alert {
+    font-size: 1.5em;
+    text-align: center;
+    animation: fadeIn 0.5s;
+}
+
+#highlighted-text {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.d-none {
+    display: none !important;
+}
+
+#emo-svg {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.progress-bar {
+    background-color: #28a745;
+    transition: width 0.6s ease;
+}
+
+/* styles.css (Updated with story step styles) */
+/* ... (keep all previous styles) */
+
+.story-step {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.story-step p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Ensure fadeIn animation is defined */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

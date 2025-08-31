@@ -1,0 +1,107 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Adventure with Emo the Robot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Sentiment Adventure 🚀</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home/Story 😊</a></li>
+                    <li class="nav-item"><a class="nav-link" href="exercises.html">Exercises 🧩</a></li>
+                    <li class="nav-item"><a class="nav-link" href="analyzer.html">Analyzer 🔍</a></li>
+                    <li class="nav-item"><a class="nav-link" href="learn-more.html">Learn More 📚</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container bg my-5">
+        <header class="text-center mb-5">
+            <svg id="emo-svg" width="200" height="200" viewBox="0 0 100 100" class="mb-3">
+                <!-- Simple Robot SVG -->
+                <rect x="30" y="20" width="40" height="50" rx="5" fill="#007bff" />
+                <circle cx="50" cy="10" r="10" fill="#007bff" />
+                <circle cx="40" cy="5" r="3" fill="pink" />
+                <circle cx="60" cy="5" r="3" fill="pink" />
+                <rect x="35" y="80" width="10" height="10" fill="#007bff" />
+                <rect x="55" y="80" width="10" height="10" fill="#007bff" />
+                <line x1="40" y1="35" x2="60" y2="35" stroke="white" stroke-width="2" />
+            </svg>
+            <h1 class="display-4">Welcome to Sentiment Adventure! 🤖</h1>
+            <p class="lead">Learn how computers understand feelings in words, like magic! Read the story step by step.</p>
+        </header>
+
+        <section id="story" class="card mb-5">
+            <div class="card-body">
+                <h2 class="card-title">The Story of Emo the Robot</h2>
+                
+                <div class="story-step d-none" id="step1">
+                    <p>🤖 Once upon a time, there was a friendly robot named Emo who lived in a big digital city.</p>
+                    <button class="btn btn-primary" onclick="nextStep(2)">Next ➡️</button>
+                </div>
+                
+                <div class="story-step d-none" id="step2">
+                    <p>👫 Emo's best friends were kids like you! But sometimes, the kids sent messages that were happy 😊, sad 😢, or just okay 😐.</p>
+                    <button class="btn btn-primary" onclick="nextStep(3)">Next ➡️</button>
+                </div>
+                
+                <div class="story-step d-none" id="step3">
+                    <p>💥 Emo had a super power: <strong>Sentiment Analysis</strong>! This means Emo could read words and figure out the feelings behind them.</p>
+                    <button class="btn btn-primary" onclick="nextStep(4)">Next ➡️</button>
+                </div>
+                
+                <div class="story-step d-none" id="step4">
+                    <p>📝 For example: If a message said "I love ice cream!", Emo knew it was <span class="positive">positive</span> (happy!).</p>
+                    <button class="btn btn-primary" onclick="nextStep(5)">Next ➡️</button>
+                </div>
+                
+                <div class="story-step d-none" id="step5">
+                    <p>📝 If it said "I lost my toy.", Emo knew it was <span class="negative">negative</span> (sad).</p>
+                    <button class="btn btn-primary" onclick="nextStep(6)">Next ➡️</button>
+                </div>
+                
+                <div class="story-step d-none" id="step6">
+                    <p>📝 If it said "The sky is blue.", it was <span class="neutral">neutral</span> (no strong feelings).</p>
+                    <button class="btn btn-primary" onclick="nextStep(7)">Next ➡️</button>
+                </div>
+                
+                <div class="story-step d-none" id="step7">
+                    <p>🔍 Emo did this by looking for special words: happy words like "love" or "great," and sad words like "lost" or "bad."</p>
+                    <button class="btn btn-primary" onclick="nextStep(8)">Next ➡️</button>
+                </div>
+                
+                <div class="story-step d-none" id="step8">
+                    <p>💻 That's how computers help us understand emotions in text, like in reviews or chats!</p>
+                    <button class="btn btn-primary" onclick="nextStep(9)">Next ➡️</button>
+                </div>
+                
+                <div class="story-step d-none" id="step9">
+                    <p>🚀 Now, let's help Emo analyze some messages. Ready for an adventure?</p>
+                    <a href="exercises.html" class="btn btn-primary btn-lg">Start Exercises!</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light">
+        <p>Made with ❤️ for learning. Perfect for 6th graders!</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
