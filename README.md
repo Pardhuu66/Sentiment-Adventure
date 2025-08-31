@@ -1,0 +1,2 @@
+# Sentiment-Adventure
+Sentiment Adventure: A fun web app for 6th graders to learn sentiment analysis via a story about Emo the Robot. Features step-by-step storytelling, interactive exercises, and a word-based analyzer. Built with HTML, CSS, JS, and Bootstrap. Deployable on Netlify.
